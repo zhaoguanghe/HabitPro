@@ -1,0 +1,95 @@
+page {
+  background-color: #fff;
+}
+
+.image {
+  /*float: left;*/
+  width: 140rpx;
+  height: 140rpx;
+  /*margin-right: 7%;
+  margin-left: 20%;*/
+}
+
+.sign {
+  margin-top: 10%;
+}
+
+.info {
+  width: 100%;
+  position: absolute;
+  bottom: 20rpx;
+  color: gray;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+}
+
+.sign_info {
+  width: 100%;
+  color: #666;
+  font-size: 43rpx;
+}
+
+.swiper {
+  width: 100%;
+  height: 500rpx;
+}
+
+.swiper_image {
+  width: 100%;
+  height: 100%;
+}
+
+.font {
+  font-size: 43rpx;
+}
+
+/* 回到首页,固定定位,悬浮 */
+
+.d-back-home {
+  position: fixed;
+  width: 96rpx;
+  height: 96rpx;
+  right: 30rpx;
+  bottom: 100rpx;
+  z-index: 10;
+}
+
+.sign-wrap {
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-btn image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  width: 360rpx;
+  height: 363rpx;
+  text-align: center;
+  background-size: 360rpx 363rpx;
+}
+
+.sign-btn::after {
+  border: none;
+}
+
+.circle {
+  background-color: #fff;
+  width:auto;
+  height:auto;
+  border: 0rpx solid #fff;
+  border-radius: 50%;
+  align-items: center;
+  /*opacity:10;透明度*/
+}
+
+.btuimage {
+  width: 360rpx;
+  height: 360rpx;
+}

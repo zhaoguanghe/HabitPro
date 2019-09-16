@@ -1,0 +1,57 @@
+<image src='https://www.xiangyundiaocha.club/HabitPro/image/015.jpeg' style='width:100%' mode='aspectFill' lazy-load></image>
+<form catchsubmit="formSubmit" report-submit>
+  <view class="cu-form-group">
+    <view class='title'>习惯名称</view>
+    <input placeholder="例：每天看书一小时" class='radius' name='hname'></input>
+  </view>
+  <view class="cu-form-group">
+    <view class='title'>设置头像</view>
+     <text class="icon-unfold" bindtap='discover'></text>
+  </view>
+  <view class='bg-white' style="{{discover?'':'display:none;'}}">
+    <view class="cu-avatar round lg margin-left marginbtm" wx:for="{{10}}" wx:key data-idx="{{index}}" bindtap='chose' style="background-image:url(https://www.xiangyundiaocha.club/HabitPro/image/0{{index+1}}.jpg);">
+      <view class="{{index==idx?'cu-tag badge icon-check bg-green':'noplay'}}"></view>
+    </view>
+  </view>
+  <view class="cu-form-group" style="margin-top: 1rpx">
+    <view class='title'>提醒时间</view>
+    <picker value="{{tarray[tindex]}}" range="{{tarray}}" bindchange="bindPickerChange1" name="htime">
+      <view class="picker">
+        {{tarray[tindex]}}
+      </view>
+    </picker>
+  </view>
+  <view class="cu-form-group mod days">
+    <view class="key">
+      <text>重复日</text>
+    </view>
+    <view class="week">
+      <text id="monday" bindtap="changeMonday" class="d {{repeat.monday ? 'on' : ''}}">一</text>
+      <text id="tuesday" bindtap="changeTuesday" class="d {{repeat.tuesday ? 'on' : ''}}">二</text>
+      <text id="wednesday" bindtap="changeWednesday" class="d {{repeat.wednesday ? 'on' : ''}}">三</text>
+      <text id="thursday" bindtap="changeThursday" class="d {{repeat.thursday ? 'on' : ''}}">四</text>
+      <text id="friday" bindtap="changeFriday" class="d {{repeat.friday ? 'on' : ''}}">五</text>
+      <text id="saturday" bindtap="changeSaturday" class="d {{repeat.saturday ? 'on' : ''}}">六</text>
+      <text id="sunday" bindtap="changeSunday" class="d {{repeat.sunday ? 'on' : ''}}">日</text>
+    </view>
+  </view>
+  <view class="cu-form-group">
+    <view class='title'>激励短语</view>
+    <input placeholder="不填则使用系统默认" class='radius' name='hword'></input>
+  </view>
+  <view class="cu-form-group">
+    <view class='title'>习惯养成周期</view>
+    <picker value="{{array[index]}}" range="{{array}}" bindchange="bindPickerChange" name="hrange">
+      <view class="picker">
+        {{array[index]}}天
+      </view>
+    </picker>
+  </view>
+  <view class="cu-form-group">
+    <view class='title'>习惯长期监督</view>
+    <switch checked bindchange="switchChange"></switch>
+  </view>
+  <view class="margin">
+    <button formType="submit" class='bg-olive'>创建</button>
+  </view>
+</form>

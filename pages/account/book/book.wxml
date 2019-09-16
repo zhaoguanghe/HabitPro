@@ -1,0 +1,20 @@
+<!--pages/book/book.wxml-->
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>HabitPro使用手册</view>
+  <view class='text-content'>
+    <view></view>
+    <view class='margin-top-sm'>一、创建一个要培养的习惯
+    <image src='https://www.xiangyundiaocha.club/HabitPro/image/one1.png' mode='widthFix' lazy-load></image>
+    </view>
+    <view class='margin-top-sm'>二、点击进入创建的习惯，将习惯设置为执行状态
+    <image src='https://www.xiangyundiaocha.club/HabitPro/image/two1.png' mode='widthFix' lazy-load></image>
+    </view>
+    <view class='margin-top-sm'>三、在方案周期内，每天坚持签到，记录习惯完成情况
+    <image src='https://www.xiangyundiaocha.club/HabitPro/image/three1.png' mode='widthFix' lazy-load></image>
+    </view>
+    <view class='margin-top-sm'>四、在习惯分析内可以看到相关数据
+    <image src='https://www.xiangyundiaocha.club/HabitPro/image/four1.png' mode='widthFix' lazy-load></image>
+     <image src='https://www.xiangyundiaocha.club/HabitPro/image/four2.png' mode='widthFix' lazy-load></image>
+    </view>
+  </view>
+</view>

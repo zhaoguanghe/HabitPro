@@ -1,0 +1,46 @@
+<!--pages/rec/add/add.wxml-->
+<view wx:if="{{id==1}}">
+<form bindsubmit="formSubmit" report-submit>
+  <textarea name="advice" class="inputclass" placeholder="您在使用HabitPro时有任何问题或建议，请反馈给我们" maxlength="100" />
+  <button class="butt" form-type="submit">提交</button>
+</form>
+</view>
+<view wx:else>
+<form bindsubmit="formSubmit" report-submit>
+  <view class="weui-cells">
+    <view class="weui-cell">
+      <textarea name="advice" placeholder="动态，记录我的习惯养成日记" maxlength="100" /><!--class="inputclass"-->
+    </view>
+  </view>
+  <view class="page-body">
+    <view class="page-section">
+      <view class="weui-cells">
+        <view class="weui-cell">
+          <view class="weui-cell__bd">
+            <view class="weui-uploader">
+              <view class="weui-uploader__hd">
+                <view class="weui-uploader__title">文章配图</view>
+                <view class="weui-uploader__info">{{imageList.length}}/9</view>
+              </view>
+              <view class="weui-uploader__bd">
+                <view class="weui-uploader__files">
+                  <block wx:for="{{imageList}}" wx:for-item="image" wx:key>
+                    <view class="weui-uploader__file">
+                      <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage"></image>
+                    </view>
+                  </block>
+                </view>
+                <view class="weui-uploader__input-box">
+                  <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <text class="section">感谢您在使用HabitPro,您的文章会经过审核后发表。</text>
+  <button class="butt" form-type="submit">发表</button>
+</form>
+</view>

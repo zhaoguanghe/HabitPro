@@ -1,0 +1,27 @@
+<!--pages/news/news.wxml-->
+<view class="bg-white padding-lr text-center">
+  <view class='padding-xs flex align-center'>
+    <view class='flex-sub text-center'>
+      <view class='text-xl padding'>
+        <text class='text-black text-bold'>好习惯，到底让一个人变得多优秀？</text>
+      </view>
+      <view class='padding'>部分引自 简书：张涔汐</view>
+    </view>
+  </view>
+  <view class='padding text-left'>我曾经看过环球人物对董卿的采访，问董卿关于阅读的情况。</view>
+  <!--<video id="myVideo"
+src="https://www.xiangyundiaocha.club/HabitPro/video/p0501c80sow.mp4" controls></video>-->
+  <view class='padding text-left'>董卿回答：我基本上保持每天睡之前1个小时阅读，雷打不动的，很多人问我还能坚持啊。无所谓坚持不坚持，这是一个习惯了。</view>
+  <image src='https://www.xiangyundiaocha.club/HabitPro/image/d1.jpg' mode='widthFix'></image>
+  <view class='padding text-left'>一个好习惯无形中成就一个人，能成为央视一姐挑起大梁做出“朗读者”，广受好评的文化性质的节目，没有过硬的文学底蕴拿不下来。</view>
+  <image src='https://www.xiangyundiaocha.club/HabitPro/image/d2.jpg' mode='widthFix'></image>
+  <view class='padding text-left'>俞敏洪曾经说过：一个人之所以优秀是因为有优秀的习惯。你当时看不出习惯的威力有多大，关键时刻就明白习惯的力量了。</view>
+  <view class='padding text-left'>在2008年的奥运会上，飞鱼菲尔普斯包揽所有游泳金牌8个。期间发生了一个小小的插曲，在200米蝶泳的过程中，菲尔普的泳镜进了水，在第三，第四轮的返折中，已经完全看不清视线了，正常情况下，一定会影响到选手的发挥。可是菲尔普斯不但没有受到影响，反而再次打破了世界纪录。</view>
+  <image src='https://www.xiangyundiaocha.club/HabitPro/image/p.jpg' mode='widthFix'></image>
+  <view class='padding text-left'>事后面对采访他说，自己曾经接受过黑暗中游泳训练，当时只是按照无数次训练的动作，划臂蹬腿罢了。黑暗中何时折返，何时触壁上岸，那都是轻而易举。</view>
+  <view class='padding text-left'>在黑暗中游泳的动作不需要菲尔普斯思考，长期的训练，使肌肉产生记忆，形成他的条件反射，也可以成为本能。</view>
+  <image src='https://www.xiangyundiaocha.club/HabitPro/image/009.jpg' mode='widthFix'></image>
+  <view class='padding text-left'>肌肉记忆指的是：人体的肌肉是具有记忆效应的，同一种动作重复多次之后，肌肉就会形成条件反射，也就是我们所说的习惯。</view>
+  <view class='padding text-left'>这就是习惯的力量，当你将一个动作，一种方式成为一种习惯的时候，不需要经过大脑思考，自然就产生一种行为。</view>
+  <view class='padding text-left text-bold'>而一个好的行为习惯长期的坚持，可以逐渐改变一个人的命运。</view>
+</view>

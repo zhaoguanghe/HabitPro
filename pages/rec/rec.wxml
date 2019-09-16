@@ -1,0 +1,13 @@
+<!--pages/rec/rec.wxml-->
+<import src="../../template/rec.wxml"/>
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
+  <block wx:for="{{swiperImg}}" wx:key>
+    <navigator url='{{item.pageurl}}'>
+      <swiper-item>
+        <image src="{{item.swiperimgurl}}" class="swiper_image" />
+      </swiper-item>
+    </navigator>
+  </block>
+</swiper>
+<template is="rec_list" data="{{req}}"/>
+<image bindtap='add' class='d-back-home' src='../../icon/add_green.png' lazy-load></image>

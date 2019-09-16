@@ -1,0 +1,50 @@
+/* pages/global/welcome/welcome.wxss */
+
+page {
+  background-color: #fff;
+  align-items: center;
+  text-align: center;
+}
+
+text {
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  /*font-weight:bold;*/
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  box-sizing: border-box;
+} 
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 280rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  margin-top: 20rpx;
+  color: #000;
+}
+
+.info{
+  width: 100%;
+  position: absolute;
+  bottom: 50rpx;
+  text-align: center;
+  align-items: center;
+}

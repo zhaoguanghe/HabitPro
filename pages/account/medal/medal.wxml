@@ -1,0 +1,20 @@
+<!--pages/medal/medal.wxml-->
+<view class='UCenter-bg' style="background-image:url('https://www.xiangyundiaocha.club/HabitPro/image/010.png')">
+  <view class="userinfo">
+    <open-data class="headimg" type="userAvatarUrl" lang="en"></open-data>
+  </view>
+  <view class="userinfo-nickname text-sl text-black">
+    共获得0枚勋章
+  </view>
+</view>
+<view class="bg-white padding">
+  <view class="grid col-3 grid-square text-center"><!--下面的图片url改为https的-->
+    <view class="bg-img padding" wx:for="{{item}}" wx:key style="background-image:url(https://www.xiangyundiaocha.club/HabitPro/image/00{{index+4}}gray.png);">
+      <view style="position:absolute;bottom:0;left:50%;color:gray;">
+        <view style="position:relative;left:-50%;">
+          {{item.name}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

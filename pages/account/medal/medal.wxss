@@ -1,0 +1,5 @@
+/* pages/medal/medal.wxss */
+@import "../logs/logs.wxss";
+page{
+  background-color: #fff;
+}

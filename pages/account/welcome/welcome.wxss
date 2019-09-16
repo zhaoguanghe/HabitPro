@@ -1,0 +1,2 @@
+/* pages/welcome/welcome.wxss */
+@import "../../habit/index/index.wxss";

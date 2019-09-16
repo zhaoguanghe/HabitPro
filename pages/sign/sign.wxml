@@ -1,0 +1,33 @@
+<!--pages/sign/sign.wxml-->
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
+  <block wx:for="{{swiperImg}}" wx:key>
+    <navigator url='{{item.pageurl}}'>
+      <swiper-item>
+        <image src="{{item.swiperimgurl}}" class="swiper_image" />
+      </swiper-item>
+    </navigator>
+  </block>
+</swiper>
+<view class="sign text-center" wx:if="{{isLogin == true}}">
+  <form catchsubmit="formSubmit" report-submit>
+    <view class="sign_info">
+      <view>已坚持{{total_sign}}天</view>
+    </view>
+    <button class="circle" formType="submit"><image class="btuimage" src="{{signed?'../../icon/sign_btn_2.png':'../../icon/sign_btn_1.png'}}"></image></button>
+    <view class="sign-wrap">
+      <view class="sign-btn">
+        
+      </view>
+    </view>
+    <!--<button class="margin cu-btn icon {{signed?'bg-green':'bg-gray'}} font"
+    style="width:150rpx;height:150rpx; opacity:0" formType="submit">{{signed?'已签到':'未签到'}}</button>-->
+  </form>
+</view>
+<modal title="打卡成功" hidden="{{modalHidden}}" bindconfirm="modalConfirm" bindcancel="modalCandel">
+  <view>
+    <image src="https://www.xiangyundiaocha.club/HabitPro/image/new/u=2787617134,1889866213&fm=26&gp=0.jpg" mode='aspectFit' bindtap='preview'></image>
+    <view style='text-align:center;'>点击图片可浏览</view>
+  </view>
+</modal>
+<view class="info">注：打卡表示今天的习惯已完成，或作为提醒，先打卡后完成</view>
+<image bindtap='backHome' class='d-back-home' src='https://www.xiangyundiaocha.club/HabitPro/image/home.png' lazy-load></image>

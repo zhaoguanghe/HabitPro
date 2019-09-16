@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/global/welcome/welcome",
+    "pages/habit/index/index",
+    "pages/rec/rec",
+    "pages/account/logs/logs",
+    "pages/account/welcome/welcome",
+    "pages/account/book/book",
+    "pages/account/data/data",
+    "pages/account/medal/medal",
+    "pages/habit/addhabit/addhabit",
+    "pages/habit/details/details",
+    "pages/sign/sign",
+    "pages/global/news/news",
+    "pages/global/share/share",
+    "pages/rec/add/add",
+    "pages/account/analyze/analyze"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "HabitPro",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#8dc63f",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/habit/index/index",
+        "iconPath": "icon/basics.png",
+        "selectedIconPath": "icon/basics_cur.png",
+        "text": "习惯"
+      },
+      {
+        "pagePath": "pages/rec/rec",
+        "iconPath": "icon/component.png",
+        "selectedIconPath": "icon/component_cur.png",
+        "text": "社区"
+      },
+      {
+        "pagePath": "pages/account/logs/logs",
+        "iconPath": "icon/about.png",
+        "selectedIconPath": "icon/about_cur.png",
+        "text": "账号"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 60000,
+    "connectSocket": 120000,
+    "uploadFile": 60000,
+    "downloadFile": 120000
+  },
+  "debug":true,
+  "plugins": {
+    "calendar": {
+      "version": "1.1.3",
+      "provider": "wx92c68dae5a8bb046"
+    }
+  },
+  "sitemapLocation": "sitemap.json"
+}

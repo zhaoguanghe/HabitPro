@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<image src='https://www.xiangyundiaocha.club/HabitPro/image/011.jpg' mode='widthFix' class='response' lazy-load></image>
+<view wx:if="{{item.length>0}}">
+  <view class="cu-list menu menu-avatar">
+    <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{item}}" wx:key bindtouchstart='ListTouchStart' bindtouchmove='ListTouchMove' bindtouchend='ListTouchEnd' bindtap='todetail' data-id='{{index}}' data-target="move-box-{{index}}"
+      style="{{item.Status==1?'background-color: #def7df;':''}}">
+      <view class="cu-avatar round lg" style="background-image:url(https://www.xiangyundiaocha.club/HabitPro/image/0{{index+1}}.jpg);"></view>
+      <view class='content'>
+        <view class='text-grey'>{{item.Hname}}</view>
+        <view class='text-gray text-sm'>
+          {{item.Status==0?'未执行':'执行中'}}</view>
+      </view>
+      <view class='action'>
+        <view class='text-grey text-xs'>{{item.Htime}}</view>
+      </view>
+      <view class='move'>
+        <view class="bg-red" catchtap='delhabit' data-id='{{item.Id}}' data-inx='{{index}}'>删除</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:else class='text-center'>
+  还没有习惯呢，点击创建一个吧
+</view>
+<view class='cu-bar margin-top justify-center'>
+  <form catchsubmit="formSubmit" report-submit>
+    <view style="display:none">
+      <input name="time" type="text" value="{{date}}" />
+    </view>
+    <button class='cu-btn round lg bg-olive' formType="submit">+创建</button>
+  </form>
+</view>

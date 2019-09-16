@@ -1,0 +1,34 @@
+<!--pages/account/analyze/analyze.wxml-->
+<view class='mymain'>
+  <view class='qs'>
+    <view class="container">
+      <view class='container_head'>
+        <view class='container_head_top'>
+          <view class='prev'>
+            <text class='iconfont icon-iconfontzhizuobiaozhun023126'></text>
+            <text>上一周</text>
+          </view>
+          <view class='top_title'>本周5月27日-6月2日</view>
+          <view class='next'>
+            <text>下一周</text>
+            <text class='iconfont icon-jiantouyou'></text>
+          </view>
+        </view>
+        <view class='container_head_main'>
+          <view>
+            <view class='main_Ttitle'>平均签到天数</view>
+            <view class='main_main'>5</view>
+            <view class='main_mintitle'>每周</view>
+          </view>
+          <view>
+            <view class='main_Ttitle'>平均签到时间</view>
+            <view class='main_main'>20:30</view>
+            <view class='main_mintitle'>每天</view>
+          </view>
+        </view>
+      </view>
+      <canvas canvas-id="lineCanvas" disable-scroll="true" class="canvas" bindtouchstart="touchHandler"></canvas>
+    </view>
+  </view>
+</view>
+

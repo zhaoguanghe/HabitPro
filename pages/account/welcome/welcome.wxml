@@ -1,0 +1,41 @@
+<!--pages/welcome/welcome.wxml-->
+<view wx:if="{{id==1}}">
+  <view class="cu-card article">
+    <view wx:for="{{list}}" wx:key class="cu-item shadow" bindtap="tonews">
+      <view class="title">{{item.name}}</view>
+      <view class="content">
+        <image src="{{item.url}}" mode="aspectFill"></image>
+        <view class="desc">
+          <view class='text-content'>{{item.context}}</view>
+          <view>
+            <view class='cu-tag bg-red light sm round'>{{item.tag1}}</view>
+            <view class='cu-tag bg-green light sm round'>{{item.tag2}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:elif="{{id==2}}">
+  <view wx:if="{{item.length>0}}">
+    <view class="cu-list menu menu-avatar">
+      <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{item}}" wx:key>
+        <view class="cu-avatar round lg" style="background-image:url(https://www.xiangyundiaocha.club/HabitPro/image/0{{index+1}}.jpg);"></view>
+        <view class='content'>
+          <view class='text-grey'>{{item.Hname}}</view>
+          <view class='text-gray text-sm'>
+            {{item.Status==1?'执行中':'已取消'}}</view>
+        </view>
+        <view class='action'>
+          <view class='text-grey text-xs'>{{item.Htime}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:else class='text-center'>
+    暂无数据
+  </view>
+</view>
+<view wx:else class='text-center'>
+  暂无数据
+</view>

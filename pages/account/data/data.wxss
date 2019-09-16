@@ -1,0 +1,147 @@
+/* pages/data/data.wxss */
+
+/*.calendar {
+  background-color: #eeedff;
+  padding-top: 10px;
+}
+
+.title {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.demo6 {
+  padding: 15px;
+}
+
+.demo6-calendar {
+  background-color: white;
+  padding-top: 10px;
+  border-radius: 15px;
+}
+
+.demo6-header {
+  font-size: large;
+  color: #59518d;
+}
+
+.demo6-board {
+  color: #000;
+  font-weight: bold;
+}
+
+.info {
+  width: 100%;
+  position: absolute;
+  bottom: 20rpx;
+  color: gray;
+  font-size: 12px;
+  text-align: center;
+  align-items: center;
+}
+*/
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  box-sizing: border-box;
+} 
+
+.body {
+  margin-top: 10rpx;
+}
+
+.btn {
+  margin: 20rpx;
+  background-color: #71c671;
+}
+
+view {
+  box-sizing: border-box;
+}
+
+.item-box {
+  width: 700rpx;
+  margin: 0 auto;
+  padding:0;
+}
+
+.items {
+  width: 100%;
+}
+
+.item {
+  position: relative;
+  border-top: 2rpx solid #eee;
+  height: 120rpx;
+  line-height: 120rpx;
+  overflow: hidden;
+}
+
+.item:last-child {
+  border-bottom: 2rpx solid #eee;
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+}
+
+.inner.txt {
+  background-color: #fff;
+  width: 100%;
+  z-index: 5;
+  padding: 0 10rpx;
+  transition: left 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.inner.del {
+  background-color: #e64340;
+  width: 180rpx;
+  text-align: center;
+  z-index: 4;
+  right: 0;
+  color: #fff;
+}
+
+.item-icon1 {
+  width: 64rpx;
+  height: 64rpx;
+  vertical-align: middle;
+  margin-right: 16rpx;
+  margin-left: 13px;
+  border-radius: 50%;
+}
+
+.item-icon2 {
+  width: 64rpx;
+  height: 64rpx;
+  vertical-align: middle;
+  margin-right: 16rpx;
+  margin-left: -13px;
+  border-radius: 50%;
+}
+
+.item-data {
+  float: right;
+  margin-right: 5%;
+}
+
+.rankpace {
+  color: #fa7e04;
+}
+
+.footer {
+  margin-top: 0rpx;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}

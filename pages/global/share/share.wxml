@@ -1,0 +1,11 @@
+<!--pages/share/share.wxml-->
+<view class='margin-xl bg-white padding-xl radius shadow-lg'>
+  <view class='text-center margin-bottom text-lg  text-grey'>HabitPro监督系统</view>
+  <view class='text-content text-center'>
+    <view></view>
+    <view class='margin-top-sm'>您的微信好友正在使用HabitPro培养优秀习惯，需要您的监督，是否帮助TA？
+    </view>
+    <button class='margin-top-sm' size="mini" bindtap='toanalyze'>帮助</button>
+    <button class='margin-top-sm margin-left' size="mini" bindtap='toindex'>拒绝</button>
+  </view>
+</view>

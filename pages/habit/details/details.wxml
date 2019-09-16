@@ -1,0 +1,55 @@
+<!--pages/details/details.wxml
+<view bindtap='sent'>习惯详情及控制</view>-->
+<view class="bg-img bg-mask padding-tb-xl" style="background-image:url('https://www.xiangyundiaocha.club/HabitPro/image/008.jpg')">
+  <view class='padding-xl text-white'>
+    <view class='padding-xs text-xl'>
+      播下一个行动，收获一种习惯
+    </view>
+    <view class='padding-xs'>
+      Sow an action, reap a habit
+    </view>
+  </view>
+</view>
+<view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='icon-creativefill text-red'></text>习惯名称：{{item[0].Hname}}</view>
+</view>
+<view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='icon-timefill text-yellow'></text>提醒时间：{{item[0].Htime}}</view>
+</view>
+<view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='icon-countdownfill text-blue'></text>习惯养成周期：{{item[0].Hrange}}天</view>
+</view>
+<view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='icon-commentfill text-pink'></text>监督抽查：{{item[0].Hcheck}}</view>
+</view>
+<view class="cu-bar bg-white solid-bottom">
+  <view class='action'>
+    <text class='icon-likefill text-green'></text>激励短语：{{item[0].Hword}}</view>
+</view>
+<view class="cu-form-group bg-white">
+  <view style='font-size: 30rpx;'>
+    执行状态
+  </view>
+  <switch checked="{{item[0].Status==1?true:false}}" bindchange="switchSex"></switch>
+</view>
+<view wx:if="{{item[0].Status==1}}" style="margin-top: 1rpx">
+  <view class="cu-form-group bg-white">
+    <view style='font-size: 30rpx;'>
+      好友监督
+    </view>
+    <button open-type="share" class="button-share" id="share-button" data-id="{{id}}"></button>
+    <label for="share-button">
+      <image style='width: 40rpx; height: 40rpx' src="../../../image/share.png" lazy-load />
+    </label>
+  </view>
+  <navigator url="../../sign/sign" class="cu-form-group bg-white">
+    <view style='font-size: 30rpx;'>
+      进入打卡
+    </view>
+    <text class='icon-right text-black'></text>
+  </navigator>
+</view>

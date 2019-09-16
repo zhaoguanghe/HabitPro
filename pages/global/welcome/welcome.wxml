@@ -1,0 +1,16 @@
+<!--pages/global/welcome/welcome.wxml-->
+<!--<view style='margin-top: 750rpx;'>
+<text>
+WelCome To HabitPro \n
+我们致力于人类的习惯培养和共同进步
+</text>
+</view>-->
+<view class="container">
+  <view class="userinfo">
+    <image class="userinfo-avatar" src="https://www.xiangyundiaocha.club/HabitPro/image/logo.png" background-size="cover"></image>
+    <text class="userinfo-nickname">HabitPro</text>
+  </view>
+</view>
+<view class="info">
+  <text>WelCome To HabitPro \n我们致力于人类的习惯培养和共同进步</text>
+</view>
